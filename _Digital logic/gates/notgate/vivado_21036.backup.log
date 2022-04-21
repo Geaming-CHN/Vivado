@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct 22 17:17:04 2021
+# Process ID: 21036
+# Current directory: D:/CODES/vivado/notgate
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22016 D:\CODES\vivado\notgate\notgate.xpr
+# Log file: D:/CODES/vivado/notgate/vivado.log
+# Journal file: D:/CODES/vivado/notgate\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CODES/vivado/notgate/notgate.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/CODES/vivado/notgate/notgate.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 22 17:17:30 2021...

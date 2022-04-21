@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CODES/vivado/notgate/notgate.srcs/sources_1/new/notgate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module notgate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CODES/vivado/notgate/notgate.srcs/sim_1/new/notgate_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module notgate_sim

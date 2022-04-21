@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>norgate</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>norgate</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>15994d9e</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>norgate</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>15994d9e</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>03b001a3</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>a</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>b</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>c</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.WIDTH&apos;)) - 1)">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>WIDTH</spirit:name>
+        <spirit:displayName>Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.WIDTH">8</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>norgate.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_15994d9e</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>norgate.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/norgate_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_03b001a3</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>norgate_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>WIDTH</spirit:name>
+      <spirit:displayName>Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WIDTH">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">norgate_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>norgate_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-10-22T11:57:11Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1273d607_ARCHIVE_LOCATION">d:/codes/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d54c5cc_ARCHIVE_LOCATION">d:/codes/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e3599f3_ARCHIVE_LOCATION">d:/codes/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a6d41e7_ARCHIVE_LOCATION">d:/codes/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43a3a464_ARCHIVE_LOCATION">d:/codes/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ebc48af_ARCHIVE_LOCATION">d:/codes/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cd580ca_ARCHIVE_LOCATION">d:/codes/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fa738d8_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@660e4f3b_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28a6a8cf_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fbc3df1_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@308a00b4_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c4beb28_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a9bee9d_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c3242ce_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8000a65_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64b38caf_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@353075ae_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e739b2_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6441d9ee_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d5d43c2_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7df47d19_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50f1ca3c_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b19c61c_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33383ee4_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1189bf0d_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34793484_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b5d46fc_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23e530e2_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@541af4f_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57dbde67_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f2847f7_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@230b134d_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@578c881d_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f615ca_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dbc24d9_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bae309d_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f321998_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f37b080_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e6477fc_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fd8b914_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b3c53c_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@191a25c3_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ff1e533_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@407e6c7d_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a88e035_ARCHIVE_LOCATION">d:/CODES/vivado/norgate/norgate.srcs/sources_1/new</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3c0fe3d8"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="012187ba"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="3746c371"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="10ba6623"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
