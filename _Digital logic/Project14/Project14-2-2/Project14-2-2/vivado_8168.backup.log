@@ -1,0 +1,174 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec  2 19:24:02 2021
+# Process ID: 8168
+# Current directory: C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20224 C:\Users\MingCheng\Desktop\Project14-2-2\Project14-2-2\Project14-2-2.xpr
+# Log file: C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/vivado.log
+# Journal file: C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.xpr
+INFO: [Project 1-313] Project file moved from 'D:/CODES/vivado/Project14-2-2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 675.023 ; gain = 59.375
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Dec  2 19:36:28 2021] Launched synth_1...
+Run output will be captured here: C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'din_b[3]'. [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'din_a[3]'. [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'din_a[3]'. [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'din_b[3]'. [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1006.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 1122.316 ; gain = 357.953
+startgroup
+set_property package_pin "" [get_ports [list  we_b]]
+place_ports oe_a T1
+endgroup
+place_ports we_b U1
+startgroup
+set_property package_pin "" [get_ports [list  {din_a[2]}]]
+place_ports oe_b W2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {din_a[1]}]]
+place_ports {din_a[2]} R3
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {din_a[0]}]]
+place_ports {din_a[1]} T2
+endgroup
+place_ports {din_a[0]} T3
+set_property target_constrs_file C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/constrs_1/new/Asy_DoublePortRAM_xdc.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1609.496 ; gain = 0.000
+set_property IOSTANDARD LVCMOS33 [get_ports [list oe_a]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list oe_b]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1613.121 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1613.121 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1613.121 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1615.965 ; gain = 0.000
+[Thu Dec  2 19:40:31 2021] Launched impl_1...
+Run output will be captured here: C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+set_property PROGRAM.FILE {C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/impl_1/top_Asy_DoublePortRAM.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/impl_1/top_Asy_DoublePortRAM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+close [ open C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/sources_1/new/debkey.v w ]
+add_files C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/sources_1/new/debkey.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/sources_1/new/debkey.v] -no_script -reset -force -quiet
+remove_files  C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/sources_1/new/debkey.v
+file delete -force C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.srcs/sources_1/new/debkey.v
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Dec  2 19:56:50 2021] Launched synth_1...
+Run output will be captured here: C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/synth_1/runme.log
+[Thu Dec  2 19:56:50 2021] Launched impl_1...
+Run output will be captured here: C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/impl_1/top_Asy_DoublePortRAM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/impl_1/top_Asy_DoublePortRAM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/MingCheng/Desktop/Project14-2-2/Project14-2-2/Project14-2-2.runs/impl_1/top_Asy_DoublePortRAM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B03CC8A
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  2 20:12:10 2021...

@@ -1,0 +1,7 @@
+Running: xsim.dir/Syn_SinglePortRAM_tb_behav/xsimk.exe -simmode gui -wdb Syn_SinglePortRAM_tb_behav.wdb -simrunnum 0 -socket 5801
+Design successfully loaded
+Design Loading Memory Usage: 6680 KB (Peak: 6680 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 7312 KB (Peak: 7312 KB)
+Simulation CPU Usage: 61 ms

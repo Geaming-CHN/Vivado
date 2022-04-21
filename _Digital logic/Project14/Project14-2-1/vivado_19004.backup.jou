@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec  5 22:26:42 2021
+# Process ID: 19004
+# Current directory: C:/Users/MingCheng/Desktop/vivado/Project14-2-1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18192 C:\Users\MingCheng\Desktop\vivado\Project14-2-1\Project14-2-1.xpr
+# Log file: C:/Users/MingCheng/Desktop/vivado/Project14-2-1/vivado.log
+# Journal file: C:/Users/MingCheng/Desktop/vivado/Project14-2-1\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/MingCheng/Desktop/vivado/Project14-2-1/Project14-2-1.xprupdate_compile_order -fileset sources_1

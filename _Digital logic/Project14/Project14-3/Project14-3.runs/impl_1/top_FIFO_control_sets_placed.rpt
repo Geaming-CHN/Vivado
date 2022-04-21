@@ -1,0 +1,99 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec  2 20:07:29 2021
+| Host         : LAPTOP-2P04PJLI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_FIFO_control_sets_placed.rpt
+| Design       : top_FIFO
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    29 |
+| Unused register locations in slices containing registers |   125 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      2 |            3 |
+|      3 |            1 |
+|      4 |           19 |
+|      5 |            1 |
+|      6 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              60 |           23 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              81 |           24 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+-----------------------+----------------------+------------------+----------------+
+|   Clock Signal   |     Enable Signal     |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++------------------+-----------------------+----------------------+------------------+----------------+
+|  deb/clk_100Hz   |                       | rst_IBUF             |                1 |              1 |
+|  clk_IBUF_BUFG   |                       |                      |                1 |              1 |
+|  deb/clk_100Hz   |                       |                      |                1 |              2 |
+|  d/clk_div_reg_0 |                       | dis/Q[0]             |                2 |              2 |
+|  d/clk_div_reg_0 |                       | dis/an[3]_i_1_n_0    |                1 |              2 |
+|  d/clk_div_reg_0 |                       |                      |                1 |              3 |
+|  button_deb_BUFG | F/FIFO[9][3]_i_1_n_0  | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[7][3]_i_1_n_0  | rst_IBUF             |                3 |              4 |
+|  button_deb_BUFG | F/FIFO[2][3]_i_1_n_0  | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[3][3]_i_1_n_0  | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[6][3]_i_1_n_0  | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[1][3]_i_1_n_0  | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[14][3]_i_1_n_0 | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[15][3]_i_1_n_0 | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[0][3]_i_1_n_0  | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[10][3]_i_1_n_0 | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[13][3]_i_1_n_0 | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[8][3]_i_1_n_0  | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[11][3]_i_1_n_0 | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[5][3]_i_1_n_0  | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/data_out[3]_i_1_n_0 | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[12][3]_i_1_n_0 | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/FIFO[4][3]_i_1_n_0  | rst_IBUF             |                2 |              4 |
+|  button_deb_BUFG | F/rear0               | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/head0               | rst_IBUF             |                1 |              4 |
+|  button_deb_BUFG | F/NUM                 | rst_IBUF             |                2 |              5 |
+|  d/clk_div_reg_0 |                       | dis/Q[1]             |                1 |              6 |
+|  clk_IBUF_BUFG   |                       | d/counter[0]_i_1_n_0 |                4 |             16 |
+|  clk_IBUF_BUFG   |                       | rst_IBUF             |               14 |             33 |
++------------------+-----------------------+----------------------+------------------+----------------+
+
+
