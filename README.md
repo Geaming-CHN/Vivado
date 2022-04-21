@@ -32,7 +32,9 @@ endmodule
 
 逻辑表达式
 
-$\large e=a\bar{S_2}\bar{S_1}+b\bar{S_2}{S_1}+c{S_2}\bar{S_1}+d{S_2}{S_1}$
+![](http://latex.codecogs.com/svg.latex?\large e=a\bar{S_2}\bar{S_1}+b\bar{S_2}{S_1}+c{S_2}\bar{S_1}+d{S_2}{S_1})
+
+![1](http://latex.codecogs.com/svg.latex?\int_a^bf(x)\ dx)
 
 手绘电路图如下：
 
