@@ -1,6 +1,24 @@
 # Verilog代码汇总
 
-[toc]
+- [Verilog代码汇总](#verilog代码汇总)
+- [xorgate](#xorgate)
+- [1位4选1多路选择器](#1位4选1多路选择器)
+- [数字钟设计](#数字钟设计)
+  - [内容](#内容)
+  - [设计思路](#设计思路)
+- [单端口RAM](#单端口ram)
+  - [内容](#内容-1)
+  - [设计思路](#设计思路-1)
+  - [单端口同步RAM](#单端口同步ram)
+  - [单端口异步RAM](#单端口异步ram)
+- [双端口RAM](#双端口ram)
+  - [内容](#内容-2)
+  - [设计思路](#设计思路-2)
+  - [双端口同步RAM](#双端口同步ram)
+  - [双端口异步RAM](#双端口异步ram)
+- [FIFO](#fifo)
+  - [内容](#内容-3)
+  - [设计思路](#设计思路-3)
 
 自己整理的verilog文件，方便后续查看。
 
@@ -370,7 +388,7 @@ endmodule
 
 # 单端口RAM
 
-代码传送门：
+代码传送门：https://github.com/Geaming-CHN/Vivado/tree/main/_Digital%20logic/Project14
 
 ## 内容
 
@@ -684,7 +702,7 @@ endmodule
 
 # 双端口RAM
 
-代码传送门：
+代码传送门：https://github.com/Geaming-CHN/Vivado/tree/main/_Digital%20logic/Project14
 
 ## 内容
 
@@ -971,7 +989,7 @@ module Asy_DoublePortRAM#(parameter DATA_WIDTH = 4,
 
 # FIFO
 
-代码传送门：
+代码传送门：https://github.com/Geaming-CHN/Vivado/tree/main/_Digital%20logic/Project14
 
 ## 内容
 
