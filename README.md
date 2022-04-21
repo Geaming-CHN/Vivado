@@ -8,7 +8,7 @@
 
 # xorgate
 
-代码传送门：
+代码传送门：https://github.com/Geaming-CHN/Vivado/tree/main/_Digital%20logic/gates/xorgate
 
 异或门的verilog实现：
 
@@ -30,6 +30,8 @@ endmodule
 
 # 1位4选1多路选择器
 
+代码传送门：https://github.com/Geaming-CHN/Vivado/tree/main/_Digital%20logic/Project3
+
 逻辑表达式
 
 $\large e=a\bar{S_2}\bar{S_1}+b\bar{S_2}{S_1}+c{S_2}\bar{S_1}+d{S_2}{S_1}$
@@ -39,6 +41,8 @@ $\large e=a\bar{S_2}\bar{S_1}+b\bar{S_2}{S_1}+c{S_2}\bar{S_1}+d{S_2}{S_1}$
 ![image-20220421194041779](https://cdn.jsdelivr.net/gh/GEAMING-CHN/images/blogimg/%E6%9D%82%E9%A1%B9/image-20220421194041779.png)
 
 源代码文件：
+
+采用`assign`
 
 ```verilog
 module design_1
@@ -53,6 +57,31 @@ module design_1
     output [0:0] e
     );
     assign e = a&(~S2)&(~S1)|b&(~S2)&(S1)|c&(S2)&(~S1)|d&(S2)&(S1);
+endmodule
+```
+
+采用`always`
+
+```verilog
+module design_1
+    (
+    input [2:0]a,
+    input [2:0]b,
+    input [2:0]c,
+    input [2:0]d,
+    input [1:0]S,
+    output reg[2:0]e
+    );
+    always @(a,b,c,d,S) 
+    begin
+        case(S[1:0])
+            2'b00: e = a;      
+            2'b01: e = b;
+            2'b10: e = c;
+            2'b11: e = d;
+            default:e = 2'b00;  
+        endcase
+    end
 endmodule
 ```
 
